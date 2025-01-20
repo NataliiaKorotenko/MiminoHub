@@ -1,114 +1,95 @@
-# Vanilla App Template
+# MiminoHub
 
-Цей проект було створено за допомогою Vite. Для знайомства та налаштування
-додаткових можливостей [звернись до документації](https://vitejs.dev/).
+## Project Overview
+MiminoHub is a collaborative team project that serves as a comprehensive platform for users to explore and engage with exciting content. The project was developed as part of a team effort to showcase skills in modern web development.
 
-## Створення репозиторію за шаблоном
+## Key Features
+- Interactive user interface.
+- Responsive design for all devices.
+- Seamless navigation experience.
+- Fully functional modal windows for enhanced user interaction.
 
-Використовуй цей репозиторій організації GoIT як шаблон для створення репозиторію
-свого проекту. Для цього натисни на кнопку `«Use this template»` і обери опцію
-`«Create a new repository»`, як показано на зображенні.
+## Team Collaboration
+This project was developed in a collaborative environment, with contributions from multiple developers. I was responsible for implementing the modal windows, ensuring they were both functional and visually appealing.
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+## Installation and Setup
+To run this project locally:
 
-На наступному етапі відкриється сторінка створення нового репозиторію. Заповни поле
-його імені, переконайся, що репозиторій публічний, після чого натисни кнопку
-`«Create repository from template»`.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/NataliiaKorotenko/MiminoHub.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd MiminoHub
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
-
-Після того, як репозиторій буде створено, необхідно перейти в налаштування
-створеного репозиторію на вкладку `Settings` > `Actions` > `General` як
-показано на зображенні.
-
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
-
-Проскроливши сторінку до самого кінця, в секції `«Workflow permissions»` обери
-опцію `«Read and write permissions»` і постав галочку в чекбоксі. Це
-необхідно для автоматизації процесу деплою проекту.
-
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
-
-Тепер у тебе є особистий репозиторій проекту, зі структурою файлів та папок
-репозиторію-шаблону. Далі працюй з ним, як з будь-яким іншим особистим репозиторієм,
-клонуй його собі на комп'ютер, пиши код, роби коміти та відправляй їх на
-GitHub.
-
-## Підготовка до роботи
-
-1. Переконайся, що на комп'ютері встановлено LTS-версію Node.js.
-   [Скачай та встанови](https://nodejs.org/en/) її якщо необхідно.
-2. Встанови базові залежності проекту в терміналі командою `npm install`.
-3. Запусти режим розробки, виконавши в терміналі команду `npm run dev`.
-4. Перейдіть у браузері за адресою [http://localhost:5173][def].
-   Ця сторінка буде автоматично перезавантажуватись після збереження змін у
-   файли проекту.
-
-## Файли і папки
-
-- Файли стилів повинні лежати в папці `src/css` та імпортуватись до HTML-файлів
-  сторінок. Наприклад, для `index.html` файл стилів називається `index.css`.
-- Зображення додавай до папки `src/img`. Збирач оптимізує їх, але тільки при
-  деплої продакшн версії проекту. Все це відбувається у хмарі, щоб не
-  навантажувати твій комп'ютер, тому що на слабких компʼютерах це може зайняти багато
-  часу.
-
-## Деплой
-
-Продакшн версія проекту буде автоматично збиратися та деплоїтись на GitHub
-Pages, у гілку `gh-pages`, щоразу, коли оновлюється гілка `main`. Наприклад,
-після прямого пуша або прийнятого пул-реквесту. Для цього необхідно у файлі
-`package.json` змінити значення прапора `--base=/<REPO>/`, для команди `build`,
-замінивши `<REPO>` на назву свого репозиторію, та відправити зміни на
-GitHub.
-
-```json
-"build": "vite build --base=/<REPO>/",
+To build the project for production:
+```bash
+npm run build
 ```
 
-Далі необхідно зайти в налаштування GitHub-репозиторію (`Settings` > `Pages`) та
-виставити роздачу продакшн версії файлів з папки `/root` гілки `gh-pages`, якщо
-це не було зроблено автоматично.
+## Technologies Used
+- Vite
+- HTML/CSS/JavaScript
+- Vite Plugin for HTML Injection
 
-![GitHub Pages settings](./assets/repo-settings.png)
+## Live Demo
+Visit the live version of MiminoHub here: [MiminoHub](https://nataliiakorotenko.github.io/MiminoHub/)
 
-### Статус деплою
+---
 
-Статус деплою крайнього коміту відображається іконкою біля його ідентифікатора.
+# MiminoHub
 
-- **Жовтий колір** - виконується збірка та деплой проекту.
-- **Зелений колір** - деплой завершився успішно.
-- **Червоний колір** - під час лінтингу, збірки чи деплою сталася помилка.
+## Огляд проекту
+MiminoHub — це командний проєкт, який є багатофункціональною платформою для користувачів, що дозволяє досліджувати та взаємодіяти із захопливим контентом. Проєкт розроблено в рамках командної співпраці для демонстрації навичок сучасної веб-розробки.
 
-Більш детальну інформацію про статус можна переглянути натиснувши на іконку, і в
-вікні, що випадає, перейти за посиланням `Details`.
+## Основні функції
+- Інтерактивний інтерфейс користувача.
+- Адаптивний дизайн для всіх пристроїв.
+- Зручна навігація.
+- Повністю функціональні модальні вікна для покращення взаємодії користувачів.
 
-![Deployment status](./assets/deploy-status.png)
+## Командна співпраця
+Цей проєкт був розроблений у середовищі співпраці з участю кількох розробників. Я відповідала за реалізацію модальних вікон, забезпечуючи їхню функціональність та візуальну привабливість.
 
-### Жива сторінка
+## Інструкція з встановлення та налаштування
+Щоб запустити проєкт локально:
 
-Через якийсь час, зазвичай кілька хвилин, живу сторінку можна буде подивитися
-за адресою, вказаною на вкладці `Settings` > `Pages` в налаштуваннях репозиторію.
-Наприклад, ось посилання на живу версію для цього репозиторію
+1. Клонуйте репозиторій:
+   ```bash
+   git clone https://github.com/NataliiaKorotenko/MiminoHub.git
+   ```
+2. Перейдіть до директорії проєкту:
+   ```bash
+   cd MiminoHub
+   ```
+3. Встановіть залежності:
+   ```bash
+   npm install
+   ```
+4. Запустіть сервер розробки:
+   ```bash
+   npm run dev
+   ```
 
-[https://goitacademy.github.io/vanilla-app-template/](https://goitacademy.github.io/vanilla-app-template/).
+Для створення проєкту для продакшну:
+```bash
+npm run build
+```
 
-Якщо відкриється порожня сторінка, переконайся, що у вкладці `Console` немає помилок
-пов'язаних з неправильними шляхами до CSS та JS файлів проекту (**404**). Швидше
-за все у тебе неправильне значення прапора `--base` для команди `build` у файлі
-`package.json`.
+## Використані технології
+- Vite
+- HTML/CSS/JavaScript
+- Vite Plugin for HTML Injection
 
-## Як це працює
-
-![How it works](./assets/how-it-works.png)
-
-1. Після кожного пуша у гілку `main` GitHub-репозиторію, запускається спеціальний
-   скрипт (GitHub Action) із файлу `.github/workflows/deploy.yml`.
-2. Усі файли репозиторію копіюються на сервер, де проект ініціалізується та
-   проходить лінтинг та збірку перед деплоєм.
-3. Якщо всі кроки пройшли успішно, зібрана продакшн версія файлів проекту
-   відправляється у гілку `gh-pages`. В іншому випадку, у лозі виконання
-   скрипта буде вказано в чому проблема.
-
-
-[def]: http://localhost:5173
+## Жива демонстрація
+Відвідайте живу версію MiminoHub тут: [MiminoHub](https://nataliiakorotenko.github.io/MiminoHub/)
